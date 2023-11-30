@@ -98,7 +98,7 @@ $color-brillo-letras: #0CABAB;
 
 @keyframes brillo {
     to {
-        color: $color-brillo-texto; // Cambiar a color de brillo para el texto
-        text-shadow: 0 0 20px $color-brillo-letras; // Cambiar brillo alrededor de las letras
+        color: $color-brillo-texto; 
+        text-shadow: 0 0 20px $color-brillo-letras; 
     }
 }
