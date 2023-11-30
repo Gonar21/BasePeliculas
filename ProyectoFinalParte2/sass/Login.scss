@@ -1,6 +1,7 @@
 ﻿
 @import url('https://fonts.googleapis.com/css?family=Mukta');
 @import 'variables';
+@import 'mixin';
 
 body {
     font-family: 'Mukta', sans-serif;
@@ -58,6 +59,7 @@ a {
     height: 400px;
     background-color: rgba(255,255, 255, 1);
     box-shadow: 0 0 15px 9px #00000096;
+    z-index: 100;
 }
 
 .white-panel {
@@ -68,7 +70,6 @@ a {
     width: 50%;
     right: calc(50% - 50px);
     transition: .3s ease-in-out;
-    z-index: 1500;
     box-shadow: 0 0 15px 9px #00000096;
 }
 
@@ -112,8 +113,9 @@ a {
 }
 
 .register-info-box {
-    width: 30%;
-    padding: 0 50px;
+    min-width: 30%;
+    max-width: 35%;
+    /*padding: 0 50px;*/
     top: 20%;
     right: 0;
     position: absolute;
@@ -209,6 +211,12 @@ a {
     color: #2c7715;
 }
 
+#MainContent_btnLogin, #MainContent_btnSubmit, #label-register, #label-login {
+    @include button-styles3($background-color,$text-color, $hover-background-color);
+    width: 100%;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 768px) {
     .login-reg-panel {
         width: 90%;
@@ -246,6 +254,7 @@ a {
         font-size: 14px; 
     }
 }
+
 
 
 @media screen and (max-width: 480px) {

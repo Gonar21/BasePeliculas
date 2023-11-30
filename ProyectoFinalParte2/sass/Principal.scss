@@ -1,0 +1,11 @@
+﻿@import "variables";
+@import "mixin";
+
+#buscarPeliculas {
+    @include button-styles3($background-color,$text-color, $hover-background-color);
+}
+
+#keysss {
+    background-color: $text-color;
+    color: $colorFondoApp;
+}

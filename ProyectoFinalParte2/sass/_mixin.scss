@@ -1,9 +1,6 @@
 ﻿//botones
 
-$text-color: #000000;
-$background-color: #861b1b;
-$hover-background-color: #0cabab;
-
+@import 'variables';
 
 @mixin button-styles($background-color, $text-color, $hover-background-color, $scale-factor: 1.05) {
     background-color: $background-color;
@@ -33,7 +30,6 @@ $hover-background-color: #0cabab;
         }
     }
 }
-
 
 @mixin button-styles2($background-color, $text-color, $hover-background-color, $scale-factor: 1.05) {
     background-color: $background-color;
@@ -69,6 +65,7 @@ $hover-background-color: #0cabab;
     cursor: pointer;
 
     &:hover {
+        color: $text-color;
         background-color: $hover-background-color;
         animation: translate 0.6s ease;
         transform: scale($scale-factor) translateX($hover-translate);

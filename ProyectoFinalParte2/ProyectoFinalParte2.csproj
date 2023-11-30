@@ -217,6 +217,7 @@
     <Content Include="sass\PaginaPrincipal.scss" />
     <Content Include="sass\DetallePeliculas.scss" />
     <Content Include="sass\_mixin.scss" />
+    <Content Include="sass\Principal.scss" />
     <None Include="sass\_variables.scss" />
     <Content Include="sass\Login.scss" />
     <Content Include="package.json" />

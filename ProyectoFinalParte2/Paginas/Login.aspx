@@ -51,8 +51,8 @@
                     <h2>REGISTER</h2>
                     <asp:TextBox ID="txtUsername" runat="server" placeholder="Nombre de usuario" CssClass="text" ></asp:TextBox>
                     <asp:TextBox ID="txtFirstName" runat="server" placeholder="Nombre" CssClass="text" ></asp:TextBox>
-                    <asp:TextBox ID="txtLastName" runat="server" placeholder="Apellidos" CssClass="text" ></asp:TextBox>
-                    <asp:TextBox ID="txtsecunName" runat="server" placeholder="Apellidos" CssClass="text" ></asp:TextBox>
+                    <asp:TextBox ID="txtLastName" runat="server" placeholder="Primer Apellido" CssClass="text" ></asp:TextBox>
+                    <asp:TextBox ID="txtsecunName" runat="server" placeholder="Segundo Apellido" CssClass="text" ></asp:TextBox>
                     <asp:TextBox ID="txtEmail" runat="server" placeholder="Email" CssClass="text"  ></asp:TextBox>
                     <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" placeholder="Contraseña" CssClass="text"  ></asp:TextBox>
                     <asp:Button ID="btnSubmit" runat="server" Text="Registrarse" OnClick="btnSubmit_Click" CssClass="button" />

@@ -67,6 +67,8 @@ namespace ProyectoFinalParte2.Paginas
                             {
                                 Application["User"] = response;
                                 Response.Redirect("PaginaPrincipal.aspx");
+                                txtlogin.Text = "";
+                                txtcontrasena.Text = "";
                             }
                             else
                             {
@@ -99,13 +101,15 @@ namespace ProyectoFinalParte2.Paginas
                                     string script2 = "alert('Su usuario se encuentra inactivo, por favor comuníquese con el administrador');";
                                     ClientScript.RegisterClientScriptBlock(this.GetType(), "ErrorScript", script2, true);
                                     Application["AttemptsLogin"] = 0;
-                                    txtlogin.Text = string.Empty;
+                                    txtlogin.Text = "";
+                                    txtcontrasena.Text = "";
                                 }
                                 else
                                 {
                                     string script = "alert('Usuario y/o contraseña incorrectos');";
                                     ClientScript.RegisterClientScriptBlock(this.GetType(), "ErrorScript", script, true);
-                                    txtlogin.Text = string.Empty;
+                                    txtlogin.Text = "";
+                                    txtcontrasena.Text = "";
                                 }
                             }
                         }
@@ -125,7 +129,6 @@ namespace ProyectoFinalParte2.Paginas
 #endif
             }
         }
-
 
         protected async void btnSubmit_Click(object sender, EventArgs e)
         {
