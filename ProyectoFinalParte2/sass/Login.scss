@@ -11,7 +11,34 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    overflow-y: hidden; /* Habilitamos el scroll vertical en toda la página */
+    overflow-y: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container h1 {
+    position: relative;
+    letter-spacing: 5px;
+    color: #fff;
+    font-size: 100px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .4);
+    /*z-index: 100;*/
+   
+}
+
+
+.container span {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    transition: 1s;
 }
 
 a {
@@ -29,6 +56,7 @@ a {
     left: 0;
     margin: auto;
     height: 400px;
+    z-index: 1500;
     background-color: rgba(236, 48, 20, 0.9);
 }
 
@@ -40,7 +68,7 @@ a {
     width: 50%;
     right: calc(50% - 50px);
     transition: .3s ease-in-out;
-    z-index: 0;
+    z-index: 1500;
     box-shadow: 0 0 15px 9px #00000096;
 }
 
@@ -79,8 +107,7 @@ a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    max-width: 80%; /* Ajusta el tamaño de la imagen según tus necesidades */
-    z-index: 1; /* Para superponer la imagen sobre el panel blanco */
+    max-width: 80%;
     transition: 0.3s ease-in-out;
 }
 
@@ -99,7 +126,7 @@ a {
 
 .login-show,
 .register-show {
-    z-index: 1;
+   /* z-index: 1;*/
     display: none;
     opacity: 0;
     transition: 0.3s ease-in-out;
@@ -174,7 +201,7 @@ a {
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 1px;
-    z-index: 99;
+    /*z-index: 99;*/
 }
 
 a {
@@ -182,8 +209,6 @@ a {
     color: #2c7715;
 }
 
-
-/* Estilos para pantallas más pequeñas (Responsive) */
 @media screen and (max-width: 768px) {
     .login-reg-panel {
         width: 90%;
@@ -195,7 +220,6 @@ a {
     }
 }
 
-/* Estilos para pantallas aún más pequeñas (móviles) */
 @media screen and (max-width: 480px) {
     .login-reg-panel {
         width: 100%;
@@ -211,22 +235,21 @@ a {
     }
 }
 
-/* Para hacer que el texto sea más pequeño y blanco */
 .h2, .p, .label, .input {
-    font-size: 16px; /* Tamaño de fuente más pequeño */
-    color: white; /* Color de texto blanco */
+    font-size: 16px; 
+    color: white; 
 }
 
-/* Estilos para pantallas más pequeñas (Responsive) */
+
 @media screen and (max-width: 768px) {
     .h2, .p, .label, .input {
-        font-size: 14px; /* Tamaño de fuente aún más pequeño en pantallas pequeñas */
+        font-size: 14px; 
     }
 }
 
-/* Estilos para pantallas aún más pequeñas (móviles) */
+
 @media screen and (max-width: 480px) {
     .h2, .p, .label, .input {
-        font-size: 12px; /* Tamaño de fuente más pequeño en pantallas móviles */
+        font-size: 12px;
     }
 }
