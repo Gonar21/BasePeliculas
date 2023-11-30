@@ -1,43 +1,42 @@
-﻿
 body {
-    background-color: #0b122b;
+  background-color: #0b122b;
 }
 
-
-
-/* Estilos generales */
 .carousel {
-    color: #fff; /* Color del texto */
-    padding: 20px;
+  color: #fff;
+  padding: 20px;
 }
 
-    .carousel h2 {
-        color:white;
-        font-size: 24px; /* Tamaño de fuente para el título */
-        margin-bottom: 20px;
-    }
+.carousel h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
 .carousel-item img {
-    max-height: 400px; /* Altura máxima de las imágenes del carrusel */
-    width: auto;
-    margin: 0 auto;
+  max-height: 400px;
+  width: auto;
+  margin: 0 auto;
 }
 
 .carousel-item h3 {
-    font-size: 18px; /* Tamaño de fuente para el título de la película */
-    margin: 10px 0;
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 .carousel-item p {
-    font-size: 14px; /* Tamaño de fuente para los párrafos de información */
-    margin: 5px 0;
+  font-size: 14px;
+  margin: 5px 0;
+  color: #ffffff;
+  font-family: "Times New Roman", sans-serif;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    color: #fff; /* Color de las flechas de navegación del carrusel */
+.carousel-control-prev, .carousel-control-next {
+  color: #fff;
 }
 
-.h2{
-color:white;
+.h2 {
+  color: #ffffff;
+  font-family: "Times New Roman", sans-serif;
+  font-size: 35px;
 }

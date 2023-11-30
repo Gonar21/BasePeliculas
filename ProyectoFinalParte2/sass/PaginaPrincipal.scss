@@ -1,0 +1,44 @@
+﻿@import 'variables';
+
+body {
+    background-color: #0b122b;
+}
+
+.carousel {
+    color: #fff;
+    padding: 20px;
+}
+
+.carousel h2 {
+    color: $colorTexto;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.carousel-item img {
+    max-height: 400px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.carousel-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.carousel-item p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: $colorTexto;
+    font-family: $font-Times-New-Roman;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    color: #fff;
+}
+
+.h2 {
+    color: $colorTexto;
+    font-family: $font-Times-New-Roman;
+    font-size: $font-size-default;
+}

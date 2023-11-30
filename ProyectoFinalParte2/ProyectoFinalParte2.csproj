@@ -214,6 +214,9 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="sass\PaginaPrincipal.scss" />
+    <Content Include="sass\DetallePeliculas.scss" />
+    <Content Include="sass\_mixin.scss" />
     <None Include="sass\_variables.scss" />
     <Content Include="sass\Login.scss" />
     <Content Include="package.json" />

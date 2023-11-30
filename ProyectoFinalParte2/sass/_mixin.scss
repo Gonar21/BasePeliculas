@@ -1,0 +1,86 @@
+﻿//botones
+
+$text-color: #000000;
+$background-color: #861b1b;
+$hover-background-color: #0cabab;
+
+
+@mixin button-styles($background-color, $text-color, $hover-background-color, $scale-factor: 1.05) {
+    background-color: $background-color;
+    color: $text-color;
+    border: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hover-background-color;
+        animation: bounce 0.6s ease;
+        transform: scale($scale-factor);
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+
+        40% {
+            transform: translateY(-20px);
+        }
+
+        60% {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+
+@mixin button-styles2($background-color, $text-color, $hover-background-color, $scale-factor: 1.05) {
+    background-color: $background-color;
+    color: $text-color;
+    border: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hover-background-color;
+        animation: rotate 0.6s ease;
+        transform: scale($scale-factor);
+    }
+
+    @keyframes rotate {
+        0%, 100% {
+            transform: rotate(0deg);
+        }
+
+        50% {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@mixin button-styles3($background-color, $text-color, $hover-background-color, $scale-factor: 1.05, $hover-translate: 10px) {
+    background-color: $background-color;
+    color: $text-color;
+    border: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hover-background-color;
+        animation: translate 0.6s ease;
+        transform: scale($scale-factor) translateX($hover-translate);
+    }
+
+    @keyframes translate {
+        0%, 100% {
+            transform: translateX(0);
+        }
+
+        50% {
+            transform: translateX(-$hover-translate);
+        }
+    }
+}
