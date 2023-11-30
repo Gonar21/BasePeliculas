@@ -56,8 +56,8 @@ a {
     left: 0;
     margin: auto;
     height: 400px;
-    z-index: 1500;
-    background-color: rgba(236, 48, 20, 0.9);
+    background-color: rgba(255,255, 255, 1);
+    box-shadow: 0 0 15px 9px #00000096;
 }
 
 .white-panel {
@@ -78,7 +78,7 @@ a {
 }
 
 .login-reg-panel {
-    color: #B8B8B8;
+    color: #0b122b;
 }
 
 .login-reg-panel #label-login,
