@@ -1,0 +1,35 @@
+﻿body {
+    background-color: #0b122b;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #0b122b;
+}
+
+.imagen img {
+    max-width: 300px; /* Establece un ancho máximo para la imagen */
+    height: auto;
+    margin-right: 20px; /* Añade un margen derecho para separar la imagen del texto */
+}
+
+.contente {
+    margin-left: 15px;
+    flex: 1; /* Hace que el contenido ocupe el espacio restante */
+}
+
+.P {
+    color: white;
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 0; /* Elimina el margen superior para evitar espacios en blanco innecesarios */
+}
+
+.p {
+    color: white;
+}
