@@ -12,8 +12,6 @@
 
     <link href="../Css/PaginaPrincipal.css" rel="stylesheet" />
 
-
-
     <h2 class="h2">Peliculas Top 5 </h2>
   <div class="d-flex justify-content-center">
 
@@ -60,8 +58,37 @@
                 <span aria-hidden="true"></span>
                 <span class="sr-only">Siguiente</span>
             </a>
+
     </div>
     </div>
+
+      
+         <%-- <div class="bubbles">
+
+              <span style="--i:11;"></span>
+              <span style="--i:12;"></span>
+              <span style="--i:24;"></span>
+              <span style="--i:10;"></span>
+              <span style="--i:14;"></span>
+              <span style="--i:23;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:16;"></span>
+              <span style="--i:19;"></span>
+              <span style="--i:20;"></span>
+              <span style="--i:22;"></span>
+              <span style="--i:25;"></span>
+              <span style="--i:18;"></span>
+              <span style="--i:21;"></span>
+              <span style="--i:15;"></span>
+              <span style="--i:13;"></span>
+              <span style="--i:26;"></span>
+              <span style="--i:17;"></span>
+              <span style="--i:13;"></span>
+              <span style="--i:28;"></span>
+              
+              
+          </div>--%>
+
 </div>
 
    <%-- <asp:Repeater ID="rptPeliculas" runat="server">

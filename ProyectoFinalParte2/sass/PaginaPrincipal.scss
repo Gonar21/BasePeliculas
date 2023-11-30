@@ -1,7 +1,54 @@
 ﻿@import 'variables';
 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+
+    min-height: 100vh;
     background-color: #0b122b;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.bubbles{
+    position:relative;
+    display:flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
 }
 
 .carousel {
@@ -37,8 +84,21 @@ body {
     color: #fff;
 }
 
+$color-brillo-texto: #861B1B;
+$color-brillo-letras: #0CABAB;
+
 .h2 {
     color: $colorTexto;
     font-family: $font-Times-New-Roman;
     font-size: $font-size-default;
+    text-shadow: 0 0 10px $color-brillo-letras;
+    transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    animation: brillo 2s infinite alternate;
+}
+
+@keyframes brillo {
+    to {
+        color: $color-brillo-texto; // Cambiar a color de brillo para el texto
+        text-shadow: 0 0 20px $color-brillo-letras; // Cambiar brillo alrededor de las letras
+    }
 }
